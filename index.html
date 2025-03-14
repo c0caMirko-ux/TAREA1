@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Coca Ponce Mirko</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Coca Ponce Mirko</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#recommendations">Recomendaciones</a></li>
+                <li><a href="#articles">Publicaciones</a></li>
+                <li><a href="#contact">Contacto</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="hero">
+            <div>
+                <h2>Sobre Mí</h2>
+                <img src="imagenes/mapache sexy.jpg" alt="Foto de Mirko Coca Ponce" class="profile-pic">
+                <p>Soy un estudiante de la Universidad de Valle de Bolivia, cursando la licenciatura en Ciencias de Datos. Me apasiona la programación y el análisis de datos, y mi objetivo es mejorar continuamente mis habilidades en el desarrollo de software y bases de datos. Disfruto trabajar en equipo y resolver problemas de manera creativa.</p>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Sistema de Gestión de Inventario</h3>
+                    <p>Un sistema que permite registrar y gestionar productos de una marca propia que vende accesorios y suplementación para gimnasios.</p>
+                </div>
+                <div class="project">
+                    <h3>Sistema de Gestión de Clientes</h3>
+                    <p>Aplicación para registrar y administrar la información de clientes, con opciones de búsqueda y generación de informes detallados.</p>
+                </div>
+                <div class="project">
+                    <h3>API para Predicción de Ventas</h3>
+                    <p>Creación de una API en Flask que predice ventas mediante modelos de regresión en Python.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                    <p>Python</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
+                    <p>SQL</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                        <span>85%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
