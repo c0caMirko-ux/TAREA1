@@ -9,83 +9,83 @@
 <body>
     <header>
         <h1>Coca Ponce Mirko</h1>
+        <button id="theme-toggle">🌙</button>
         <nav>
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#gallery">Galería</a></li>
-                <li><a href="#recommendations">Recomendaciones</a></li>
-                <li><a href="#articles">Publicaciones</a></li>
-                <li><a href="#contact">Contacto</a></li> 
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <section id="about" class="hero">
-            <div>
-                <h2>Sobre Mí</h2>
-                <img src="imagenes/mapache sexy.jpg" alt="Foto de Mirko Coca Ponce" class="profile-pic">
-                <p>Soy un estudiante de la Universidad de Valle de Bolivia, cursando la licenciatura en Ciencias de Datos. Me apasiona la programación y el análisis de datos, y mi objetivo es mejorar continuamente mis habilidades en el desarrollo de software y bases de datos. Disfruto trabajar en equipo y resolver problemas de manera creativa.</p>
-            </div>
+        <!-- Sobre mí -->
+        <section id="about" class="content-section">
+            <h2>Sobre Mí</h2>
+            <img src="imagenes/mapache sexy.jpg" alt="Foto de Mirko" class="profile-pic">
+            <p>Soy un estudiante de la Universidad del Valle de Bolivia, apasionado por la programación y el análisis de datos en busca de experiencia en el desarrollo de software y bases de datos </p>
         </section>
-        
-        <section id="projects">
+
+        <!-- Proyectos -->
+        <section id="projects" class="content-section">
             <h2>Proyectos</h2>
             <div class="projects">
-                <div class="project">
-                    <h3>Sistema de Gestión de Inventario</h3>
-                    <p>Un sistema que permite registrar y gestionar productos de una marca propia que vende accesorios y suplementación para gimnasios.</p>
-                </div>
-                <div class="project">
-                    <h3>Sistema de Gestión de Clientes</h3>
-                    <p>Aplicación para registrar y administrar la información de clientes, con opciones de búsqueda y generación de informes detallados.</p>
-                </div>
-                <div class="project">
-                    <h3>API para Predicción de Ventas</h3>
-                    <p>Creación de una API en Flask que predice ventas mediante modelos de regresión en Python.</p>
-                </div>
+                <div class="project"><h3>Sistema de Inventario</h3><p>Gestión de productos y clientes de una marca de acesorios y suplemebtacion para gimnasio</p></div>
+                <div class="project"><h3>Gestión de Clientes</h3><p>Registro y administración de clientes de una empresa de electrodomesticos</p></div>
             </div>
         </section>
-        
-        <section id="skills" class="skills">
+
+        <!-- Habilidades -->
+        <section id="skills" class="content-section">
             <h2>Habilidades</h2>
             <div class="skills-container">
-                <div class="skill-card">
+                <div class="skill">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
                     <p>Python</p>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
-                        <span>90%</span>
+                        <div class="progress" style="width: 80%;">80%</div>
                     </div>
                 </div>
-                <div class="skill-card">
+                <div class="skill">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
                     <p>SQL</p>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
-                        <span>85%</span>
+                        <div class="progress" style="width: 70%;">70%</div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="contact">
+        <!-- Galería -->
+        <section id="gallery" class="content-section">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="imagenes/imagen 1.jpg" alt="Imagen 1">
+                <img src="imagenes/la pasion.jpg" alt="Imagen 2">
+                <img src="imagenes/images.jpg" alt="Imagen 3">
+                <img src="imagenes/aaa.jpg" alt="Imagen 4">
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="content-section">
             <h2>Contacto</h2>
             <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message"></textarea>
-                
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje"></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </div>
+
+    <script>
+        // Modo oscuro
+        document.getElementById("theme-toggle").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>
